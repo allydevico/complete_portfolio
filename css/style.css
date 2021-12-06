@@ -52,6 +52,7 @@
 
   .content-section p{
     padding-left: 10px; 
+    padding-right: 10px;
     font-size: 20px;
     text-align: center;
   }
@@ -86,7 +87,7 @@
   footer {
     margin: 10px 0;
     background-color: #017789;
-    padding: 10px;
+    padding: 10px 10px;
 
   }
 
@@ -97,8 +98,9 @@
   }
 
   footer img{
-    width: 40px;
+    width: 50px;
     height: auto;
+    margin-right: 10px;
   }
 
   .education_container{
@@ -287,24 +289,22 @@
       font-size: 18px;
     }
 
-    .content{
-      padding: 
-    }
-
     .image-section img {
       width: 75%;
     }
 
     .content-section p {
-      font-size: 23px;
+      font-size: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .footer p{
-      font-size: 23px;
+      font-size: 30px;
     }
 
     footer img {
-      width: 60px;
+      width: 80px;
     }
 
   .education_container{
