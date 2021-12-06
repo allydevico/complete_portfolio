@@ -63,7 +63,7 @@
   .container {
     width: 100%;
     margin: auto;
-    padding-top: 20px;
+    padding: 20px 0px;
   }
 
   .content{
@@ -86,12 +86,14 @@
   footer {
     margin: 10px 0;
     background-color: #017789;
+    padding: 10px;
 
   }
 
   footer p{
       color: white;
       font-size: 20px;
+      padding-bottom: 10px;
   }
 
   footer img{
@@ -285,6 +287,10 @@
       font-size: 18px;
     }
 
+    .content{
+      padding: 
+    }
+
     .image-section img {
       width: 75%;
     }
@@ -357,7 +363,7 @@
     font-size: 25px;
   }
 
-  
+
 
   @media screen and (prefers-reduced-motion: reduce){
     /*Turn off scroll*/
