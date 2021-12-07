@@ -42,14 +42,14 @@
   <h1> Contact </h1>
   
   <div class = "contactform" id = "main">
-    <form action = "inputpage.php">
+    <form action = "https://formspree.io/f/xlezeryr" method = "POST">
       <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" placeholder="Ally Devico">
+        <input type="text" id="fullname" name="fullname" placeholder="Ally Devico">
       <label for="email">Email</label>
-        <input type="text" id="email" placeholder="adevico@umich.edu">
-      <label for="subject">Message</label>
-        <textarea id="subject" placeholder="Write your message here..." style="height:250px"></textarea>
-      <input type="submit" value="Submit">
+        <input type="text" id="email" name="email" placeholder="adevico@umich.edu">
+      <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write your message here..."></textarea>
+      <button class = "button" type = "submit">Submit</button>
     </form>
   </div>
 </main>
