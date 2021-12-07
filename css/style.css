@@ -390,6 +390,7 @@
   }
 
   .parallax {
+    visibility: visible;
     background-image: url("../images/network.jpg");
     min-height: 100px;
     background-attachment: fixed;
