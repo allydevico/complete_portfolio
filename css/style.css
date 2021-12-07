@@ -49,7 +49,7 @@
     padding-top: 10px;
     text-align:center;
     animation-name: slidein;
-    animation-duration: 0.6s;
+    animation-duration: 0.8s;
   }
 
   .content-section p{
@@ -255,7 +255,21 @@
     margin: auto;
     padding-top: 15px;
     margin-top: 15px;
+    margin-bottom: 30px;
     border: 2px solid black;
+  }
+
+  .button{
+    margin: auto;
+    width: 30%;
+    background-color:#017789; 
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff; 
   }
 
   .skip a{
@@ -382,8 +396,27 @@
 
   @media screen and (prefers-reduced-motion: reduce){
 
-    h1 {
-    animation: none !important;
+    * {
+      -o-transform: none !important;
+      -moz-transform: none !important;
+      -ms-transform: none !important;
+      -webkit-transform: none !important;
+      transform: none !important;
+  }
+
+    h1{
+      -webkit-animation: none !important;
+      -moz-animation: none !important;
+      -o-animation: none !important;
+      -ms-animation: none !important;
+      animation: none !important;
+    }
+
+    .parallax {
+      background-attachment:scroll !important;
+      background-position:center !important;
+      background-repeat:no-repeat !important;
+      background-size:cover !important;
     }
 
   }
