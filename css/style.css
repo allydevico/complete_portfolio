@@ -219,14 +219,10 @@
     grid-row: 9;
   }
 
-  .parallax {
-    background-image: url("../images/network.jpg");
-    min-height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .parallax{
+    visibility: hidden;
   }
+
 
   input[type=text], select, textarea {
     width: 100%; 
@@ -391,6 +387,15 @@
 
   .contactform{
     width: 60%;
+  }
+
+  .parallax {
+    background-image: url("../images/network.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 
