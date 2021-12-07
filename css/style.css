@@ -376,6 +376,15 @@
     font-size: 25px;
   }
 
+  footer img {
+    width: 70px;
+  }
+
+  .contactform{
+    width: 60%;
+  }
+
+
 }
 
 
