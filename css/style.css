@@ -109,6 +109,14 @@
     justify-items: center;
   }
 
+  .education_container h2{
+    font-size: 14px;
+  }
+
+  .education_container li{
+  font-size: 12px;
+}
+
   #umich{
     grid-column: 1;
     grid-row: 1;
@@ -123,6 +131,7 @@
   #cornell{
     grid-column: 1;
     grid-row: 3;
+    margin-bottom: 70px;
   }
 
   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
