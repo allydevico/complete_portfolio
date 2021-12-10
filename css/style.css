@@ -431,6 +431,10 @@
     font-size: 25px;
   }
 
+  .image-section img {
+    width: 40%;
+  }
+
   footer img {
     width: 50px;
   }
