@@ -169,7 +169,7 @@
     .interest-content{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(9, auto);
     row-gap: 15px;
   }
@@ -180,7 +180,7 @@
   }
 
    #baking{
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 1;
     grid-row: 2;
   }
 
@@ -190,7 +190,7 @@
   }
 
   #beach{
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 1;
     grid-row: 4;
   }
 
@@ -200,7 +200,7 @@
   }
 
   #reading{
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 1;
     grid-row: 6;
   }
 
@@ -210,7 +210,7 @@
   }
 
   #yankees{
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 1;
     grid-row: 8;
   }
 
@@ -369,6 +369,55 @@
     grid-row: 3;
     margin: auto;
     align-items: center;
+  }
+
+  .interest-content{
+    grid-template-columns: repeat(3, auto);
+  }
+
+  #traveling{
+    grid-column: 1 / span 1;
+    grid-row: 1;
+  }
+
+   #baking{
+    grid-column: 2 / span 1;
+    grid-row: 2;
+  }
+
+  #tennis{
+    grid-column: 1 / span 1;
+    grid-row: 3;
+  }
+
+  #beach{
+    grid-column: 2 / span 1;
+    grid-row: 4;
+  }
+
+  #yoga{
+    grid-column: 1 / span 1;
+    grid-row: 5;
+  }
+
+  #reading{
+    grid-column: 2 / span 1;
+    grid-row: 6;
+  }
+
+  #icecream{
+    grid-column: 1 / span 1;
+    grid-row: 7;
+  }
+
+  #yankees{
+    grid-column: 2 / span 1;
+    grid-row: 8;
+  }
+
+  #photography{
+    grid-column: 1 / span 1;
+    grid-row: 9;
   }
 
 
