@@ -102,6 +102,28 @@
     margin-right: 10px;
   }
 
+  .education_container{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 15px;
+  }
+
+  #umich{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #whrhs{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #cornell{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
