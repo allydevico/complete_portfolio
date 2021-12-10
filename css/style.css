@@ -102,57 +102,51 @@
     margin-right: 10px;
   }
 
-  .education_container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, auto);
-    row-gap: 15px;
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
 
-  }
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
-  .umich-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    grid-column: 1;
-    grid-row: 1;
-    overflow: hidden;
-  }
-  
-  .umich{
-    grid-column: 1;
-    grid-row: 2;
-  }
-  
-  .whrhs-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    grid-column: 1 ;
-    grid-row: 3;
-    overflow: hidden;
-  }
-  
-  .whrhs{
-    grid-column: 1;
-    grid-row: 4;
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
-  }
-  
-  .cornell-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    grid-column: 1;
-    grid-row: 5;
-    overflow: hidden;
-  }
-  
-  .cornell {
-    grid-column: 1;
-    grid-row: 6;
-  }
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #017789;
+  color: white;
+  transform: rotateY(180deg);
+}
 
   .text-block{
     background-color: transparent;
@@ -330,52 +324,6 @@
       width: 80px;
     }
 
-  .education_container{
-    padding-top: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    row-gap: 50px;
-  }
-
-  .umich-image {
-    grid-column: 1 /span 2;
-    grid-row: 1;
-  }
-  
-  .umich{
-    font-size: 20px;
-    grid-column: 3 / span 2;
-    grid-row: 1;
-    margin: auto;
-    align-items: center;
-  }
-  
-  .whrhs-image {
-    grid-column: 3 / span 2;
-    grid-row: 2;
-  }
-  
-  .whrhs{
-    font-size: 20px;
-    grid-column: 1 /span 2;
-    grid-row: 2;
-    margin: auto;
-    align-items: center;
-  }
-  
-  .cornell-image {
-    grid-column: 1 /span 2;
-    grid-row: 3;
-  }
-  
-  .cornell {
-    font-size: 20px;
-    grid-column: 3 /span 2;
-    grid-row: 3;
-    margin: auto;
-    align-items: center;
-  }
-
   .interest-content{
     grid-template-columns: repeat(3, auto);
   }
@@ -460,13 +408,13 @@
 
   .interest-content img:hover{
     filter: opacity(100%);
-    border: 3px solid #017789;
+    border: 5px solid #017789;
 
   }
 
   .interest-content img:focus{
     filter: opacity(100%);
-    border: 3px solid #017789;
+    border: 5px solid #017789;
   }
 
   #traveling{
